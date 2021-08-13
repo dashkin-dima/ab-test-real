@@ -1,0 +1,33 @@
+.tabs {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px 0;
+
+  font-weight: 400;
+}
+
+.headerItem {
+  background-color: white;
+}
+
+.content {
+  background-color: white;
+}
+
+.row {
+  background-color: white;
+}
+
+.rowContent {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px 0;
+}
+
+.rowItem {
+  text-align: center;
+}

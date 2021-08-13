@@ -1,0 +1,23 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  width: 300px;
+}
+
+.itemForm {
+  margin-bottom: 20px;
+}
+
+.text {
+  display: inline-block;
+  width: 130px;
+}
+
+.error {
+  color: #ff0000;
+}
+
+.button {
+  width: 290px;
+}

@@ -1,0 +1,54 @@
+body {
+  background-color: #f9f9f9;
+}
+
+button {
+  padding: 11px 28px;
+
+  background: #4a9dff;
+  color: #ffffff;
+
+  border-radius: 10px;
+  border: none;
+
+  cursor: pointer;
+  &:hover {
+    background: #4a9eff86;
+    transition: background 200ms linear;
+  }
+}
+
+input {
+  padding: 8px;
+  border-radius: 20px;
+  border: 0.5px solid rgba(93, 110, 151, 0.2);
+
+  cursor: text;
+  &:focus {
+    border: 0.5px solid rgb(93, 110, 151);
+    transition: border 200ms linear;
+  }
+}
+
+hr {
+  color: #5d6e9766;
+  size: 0.5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+* {
+  color: #5d6d97;
+
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  text-align: left;
+}
