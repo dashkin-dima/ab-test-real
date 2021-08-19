@@ -56,7 +56,7 @@ const FormAddUser = (props: IFormAddUser) => {
         />
       </div>
       <div className={styles.itemForm}>
-        <span className={styles.text}>Date Last Activit: </span>
+        <span className={styles.text}>Date Last Activity: </span>
         <input
           type="date"
           value={dateLastActivity}
