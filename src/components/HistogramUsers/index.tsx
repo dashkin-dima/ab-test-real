@@ -23,18 +23,16 @@ const HistogramUsers = () => {
 
   const chartData: Object[] = [];
 
-  useEffect(() => {
-    users.forEach((user: userType) => {
-      const firstTime = new Date(user.dateRegistration).getTime();
-      const lastTime = new Date(user.dateLastActivity).getTime();
-      const days = convertToDays(lastTime - firstTime);
-      if (Number.isInteger(days)) {
-        chartData.push({
-          y: days,
-        });
-      }
-    });
-  }, []);
+  users.forEach((user: userType) => {
+    const firstTime = new Date(user.dateRegistration).getTime();
+    const lastTime = new Date(user.dateLastActivity).getTime();
+    const days = convertToDays(lastTime - firstTime);
+    if (Number.isInteger(days)) {
+      chartData.push({
+        y: days,
+      });
+    }
+  });
 
   return (
     <div>
