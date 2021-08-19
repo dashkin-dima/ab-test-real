@@ -20,7 +20,7 @@ const RollingRetention = (props: IRollingRetentionProps) => {
       const firstTime = new Date(user.dateRegistration).getTime();
       const lastTime = new Date(user.dateLastActivity).getTime();
       const days = convertToDays(lastTime - firstTime);
-      if (days > GOOD_DAYS) {
+      if (days >= GOOD_DAYS) {
         setCountGoodUsers((prevCount) => prevCount + 1);
       }
     });
